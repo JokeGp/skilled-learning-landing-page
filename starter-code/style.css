@@ -41,6 +41,11 @@ a{
     height: 48px;
     border-radius: 28px;
     background: var(--13183F, #13183F);
+    z-index: 10;
+    cursor: pointer;
+}
+.btn-getStarted:hover{
+    background: var(--666CA3, #666CA3);
 }
 
 .headMain{
@@ -88,6 +93,10 @@ a{
     height: 56px;
     border-radius: 31.5px;
     background: var(--Gradient-1, linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+    cursor: pointer;
+}
+.mainArticle button:hover{
+    background: var(--Gradient-1-Hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
 }
 
 
@@ -158,6 +167,9 @@ a{
     font-weight: 700;
     line-height: 28px;
 }
+.animationCard a:hover{
+    color: var(--FFA7C3, #FFA7C3);
+}
 
 
 .designCard{
@@ -197,6 +209,9 @@ a{
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
+}
+.designCard a:hover{
+    color: var(--FFA7C3, #FFA7C3);
 }
 
 
@@ -239,6 +254,9 @@ a{
     font-weight: 700;
     line-height: 28px;
 }
+.photographyCard a:Hover{
+    color: var(--FFA7C3, #FFA7C3);
+}
 
 
 
@@ -279,6 +297,9 @@ a{
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
+}
+.cryptoCard a:hover{
+    color: var(--FFA7C3, #FFA7C3);
 }
 
 
@@ -321,6 +342,9 @@ a{
     font-weight: 700;
     line-height: 28px;
 }
+.businessCard a:hover{
+    color: var(--FFA7C3, #FFA7C3);
+}
 
 
 footer{
@@ -358,9 +382,9 @@ footer{
 
 
 @media  screen and (min-width:1380px) {
-    .btn-getStarted{
+    .btn-getStarted {
         position: relative;
-        z-index: 1;
+        z-index: 10;
     }
     .headerNav{
         padding: 1rem 15rem 0rem 15rem;
@@ -425,7 +449,7 @@ footer{
     .animationCard h1{
         font-size: 24px;
     }
-    .animationCard p{font-size: 18px;}
+    .animationCard p{font-size: 17px;}
 
     .designCard{
         width: 350px;
@@ -470,12 +494,12 @@ footer{
     .businessCard h1{
         font-size: 24px;
     }
-    .businessCard p{font-size: 18px;}
+    .businessCard p{font-size: 17px;}
 }
 @media  screen and (min-width:1080px) and (max-width:1380px) {
-    .btn-getStarted{
+    .btn-getStarted {
         position: relative;
-        z-index: 1;
+        z-index: 10;
     }
     .headerNav{
         padding: 1rem 12rem 0rem;
@@ -540,7 +564,7 @@ footer{
     .animationCard h1{
         font-size: 24px;
     }
-    .animationCard p{font-size: 18px;}
+    .animationCard p{font-size: 17px;}
 
     .designCard{
         width: 350px;
@@ -585,13 +609,13 @@ footer{
     .businessCard h1{
         font-size: 24px;
     }
-    .businessCard p{font-size: 18px;}
+    .businessCard p{font-size: 17px;}
 }
 
 @media screen and (min-width:700px) and (max-width: 1024px) {
-    .btn-getStarted{
+    .btn-getStarted {
         position: relative;
-        z-index: 1;
+        z-index: 10;
     }
     .headerNav{
         padding: 1rem 7rem 0rem;
@@ -652,7 +676,7 @@ footer{
     .animationCard h1{
         font-size: 24px;
     }
-    .animationCard p{font-size: 18px;}
+    .animationCard p{font-size: 17px;}
 
     .designCard{
         width: 350px;
@@ -697,7 +721,7 @@ footer{
     .businessCard h1{
         font-size: 24px;
     }
-    .businessCard p{font-size: 18px;}
+    .businessCard p{font-size: 17px;}
     footer {
         padding: 5rem 11rem;
     }
