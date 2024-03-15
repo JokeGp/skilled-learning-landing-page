@@ -1,0 +1,855 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg,#FFF 0%, #f0f1ff 100%);
+}
+
+
+.overflow-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.headerNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 0rem 1rem;
+}
+.skilled-Icon{
+    width: 89px;
+    height: 25px;
+}
+.btn-getStarted{
+    color: white;
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    background: var(--13183F, #13183F);
+}
+
+.headMain{
+    padding-top: 1rem;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/image-hero-mobile.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 100%,0% 0%;
+}
+
+.img-tablet{
+    display: none;
+}
+
+.mainArticle{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 20px;
+}
+.mainArticle h1{
+    color: var(--13183F, #13183F);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Heading L */
+    font-family: "Plus Jakarta Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.mainArticle p{
+    color: var(--83869A, #83869A);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.mainArticle button{
+    color: white;
+    width: 167px;
+    height: 56px;
+    border-radius: 31.5px;
+    background: var(--Gradient-1, linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+}
+
+
+.cards{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    padding: 8px;
+    gap: 16px;
+}
+.cards img{
+    width: 56px;
+    height: 56px;
+}
+.mainCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    height: 120px;
+    border-radius: 10px;
+    background: var(--Gradient-1, linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
+}
+.mainCard h1{
+    color: var(--FFFFFF, #FFF);
+    font-family: "Plus Jakarta Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px; /* 133.333% */
+    padding: 28px;
+}
+/* cards */
+.animationCard{
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 259px;
+    padding-left: 28px;
+    gap: 1rem;
+    border-radius: 15px;
+    background: var(--FFFFFF, #FFF);
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+.icon-animation{
+   margin-top: -1rem;
+}
+.animationCard h1{
+    color: var(--13183F, #13183F);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.animationCard p{
+    color: var(--83869A, #83869A);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-right: 1rem;
+}
+.animationCard a{
+    color: var(--F74780, #F74780);
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+
+.designCard{
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 259px;
+    padding-left: 28px;
+    gap: 1rem;
+    border-radius: 15px;
+    background: var(--FFFFFF, #FFF);
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+.icon-design{
+    margin-top: -1rem;
+
+}
+.designCard h1{
+    color: var(--13183F, #13183F);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.designCard p{
+    color: var(--83869A, #83869A);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-right: 1rem;
+}
+.designCard a{
+    color: var(--F74780, #F74780);
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+
+
+.photographyCard{
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 259px;
+    padding-left: 28px;
+    gap: 1rem;
+    border-radius: 15px;
+    background: var(--FFFFFF, #FFF);
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+.icon-photography{
+    margin-top: -1rem;
+
+}
+.photographyCard h1{
+    color: var(--13183F, #13183F);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.photographyCard p{
+    color: var(--83869A, #83869A);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-right: 1rem;
+}
+.photographyCard a{
+    color: var(--F74780, #F74780);
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+
+
+.cryptoCard{
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 259px;
+    padding-left: 28px;
+    gap: 1rem;
+    border-radius: 15px;
+    background: var(--FFFFFF, #FFF);
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+.icon-crypto{
+    margin-top: -1rem;
+
+}
+.cryptoCard h1{
+    color: var(--13183F, #13183F);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.cryptoCard p{
+    color: var(--83869A, #83869A);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-right: 1rem;
+}
+.cryptoCard a{
+    color: var(--F74780, #F74780);
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+
+
+.businessCard{
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 259px;
+    padding-left: 28px;
+    gap: 1rem;
+    border-radius: 15px;
+    background: var(--FFFFFF, #FFF);
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+.icon-business{
+    margin-top: -1rem;
+
+}
+.businessCard h1{
+    color: var(--13183F, #13183F);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.businessCard p{
+    color: var(--83869A, #83869A);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-right: 1rem;
+}
+.businessCard a{
+    color: var(--F74780, #F74780);
+    font-family: "Plus Jakarta Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+
+footer{
+    background-color: #13183F;
+    height: 16vh;
+    padding: 2rem 11rem;
+}
+.footerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.footerNav img{
+    width: 89px;
+    height: 25px;
+}
+
+.btn-getStarted-foot{
+    width: 140px;
+    height: 48px;
+    border-radius: 28px;
+    background: var(--Gradient-2, linear-gradient(180deg, #4851FF 0%, #F02AA6 100%));
+    color: var(--FFFFFF, #FFF);
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+}
+.btn-getStarted-foot:hover{
+    background: var(--Gradient-2-Hover, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%));
+}
+
+
+@media  screen and (min-width:1380px) {
+    .btn-getStarted{
+        position: relative;
+        z-index: 1;
+    }
+    .headerNav{
+        padding: 1rem 15rem 0rem 15rem;
+    }
+    .headMain{  
+        background-image: none;  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 73vh;     
+        padding: 17rem 10rem 0rem 14rem;
+    }
+    .mainArticle{
+        width: 489px;
+        height: 400px;
+        gap: 40px;
+    }
+    .mainArticle h1{
+        font-size: 56px;
+        font-weight: 800;
+    }
+    .mainArticle p{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+ 
+    .img{
+        /* background-image: url("assets/image-hero-desktop.png");
+        background-position:49% 155%, 0% 0%;
+        background-repeat: no-repeat no-repeat;
+        position: relative;
+        z-index: 10;
+        height: 100vh;
+        width: 100vw; */
+        display: block;
+        position: absolute;
+        top: -7%;
+        left: 59%;
+        z-index: 3;
+    }
+    .cards{
+        padding: 16rem 25rem 7rem 25rem;
+        grid-template-columns: 360px 360px 360px;
+        gap: 80px 19px;
+        justify-content: center;
+    }
+    .mainCard{
+        width: 350px;
+        height: 322px;
+    }
+    .mainCard h1{
+        font-size: 32px;
+    }
+
+    .animationCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+   
+    .animationCard h1{
+        font-size: 24px;
+    }
+    .animationCard p{font-size: 18px;}
+
+    .designCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+    
+    .designCard h1{
+        font-size: 24px;
+    }
+    .designCard p{font-size: 18px;}
+
+
+    .photographyCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+   
+    .photographyCard h1{
+        font-size: 24px;
+    }
+    .photographyCard p{font-size: 18px;}
+
+    .cryptoCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+    
+    .cryptoCard h1{
+        font-size: 24px;
+    };
+    .cryptoCard p{font-size: 18px;}
+
+    .businessCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+   
+    .businessCard h1{
+        font-size: 24px;
+    }
+    .businessCard p{font-size: 18px;}
+}
+@media  screen and (min-width:1080px) and (max-width:1380px) {
+    .btn-getStarted{
+        position: relative;
+        z-index: 1;
+    }
+    .headerNav{
+        padding: 1rem 12rem 0rem;
+    }
+    .headMain{  
+        background-image: none;  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 73vh;     
+        padding: 17rem 10rem 0rem 5rem;
+    }
+    .mainArticle{
+        width: 489px;
+        height: 400px;
+        gap: 40px;
+    }
+    .mainArticle h1{
+        font-size: 56px;
+        font-weight: 800;
+    }
+    .mainArticle p{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+    }
+ 
+    .img{
+        /* background-image: url("assets/image-hero-desktop.png");
+        background-position:49% 155%, 0% 0%;
+        background-repeat: no-repeat no-repeat;
+        position: relative;
+        z-index: 10;
+        height: 100vh;
+        width: 100vw; */
+        display: block;
+        position: absolute;
+        top: -7%;
+        left: 49%;
+        z-index: 3;
+    }
+    .cards{
+        padding: 16rem 25rem 7rem 25rem;
+        grid-template-columns: 360px 360px 360px;
+        gap: 80px 19px;
+        justify-content: center;
+    }
+    .mainCard{
+        width: 350px;
+        height: 322px;
+    }
+    .mainCard h1{
+        font-size: 32px;
+    }
+
+    .animationCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+   
+    .animationCard h1{
+        font-size: 24px;
+    }
+    .animationCard p{font-size: 18px;}
+
+    .designCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+    
+    .designCard h1{
+        font-size: 24px;
+    }
+    .designCard p{font-size: 18px;}
+
+
+    .photographyCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+   
+    .photographyCard h1{
+        font-size: 24px;
+    }
+    .photographyCard p{font-size: 18px;}
+
+    .cryptoCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+    
+    .cryptoCard h1{
+        font-size: 24px;
+    };
+    .cryptoCard p{font-size: 18px;}
+
+    .businessCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+   
+    .businessCard h1{
+        font-size: 24px;
+    }
+    .businessCard p{font-size: 18px;}
+}
+
+@media screen and (min-width:700px) and (max-width: 1024px) {
+    .btn-getStarted{
+        position: relative;
+        z-index: 1;
+    }
+    .headerNav{
+        padding: 1rem 7rem 0rem;
+    }
+    .headMain{  
+        background-image: none;  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 23rem;     
+        padding: 8rem 6rem 0rem;
+    }
+    .mainArticle {
+        width: 398px;
+        height: 318px;
+        gap: 24px;
+    }
+    .mainArticle h1 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .mainArticle p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+ 
+    .img{
+       display: none;
+    }
+    .img-tablet{
+        display: block;
+        position: absolute;
+        top: -4%;
+        left: 54%;
+        z-index: 3;
+    }
+    .cards{
+        padding: 16rem 25rem 7rem 25rem;
+        grid-template-columns:340px 340px;
+        gap: 80px 19px;
+        justify-content: center;
+    }
+    .mainCard{
+        width: 350px;
+        height: 322px;
+    }
+    .mainCard h1{
+        font-size: 32px;
+    }
+
+    .animationCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+   
+    .animationCard h1{
+        font-size: 24px;
+    }
+    .animationCard p{font-size: 18px;}
+
+    .designCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+    
+    .designCard h1{
+        font-size: 24px;
+    }
+    .designCard p{font-size: 18px;}
+
+
+    .photographyCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+   
+    .photographyCard h1{
+        font-size: 24px;
+    }
+    .photographyCard p{font-size: 18px;}
+
+    .cryptoCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+    
+    .cryptoCard h1{
+        font-size: 24px;
+    };
+    .cryptoCard p{font-size: 18px;}
+
+    .businessCard{
+        width: 350px;
+        height: 322px;
+        gap: 2rem;
+    }
+   
+    .businessCard h1{
+        font-size: 24px;
+    }
+    .businessCard p{font-size: 18px;}
+    footer {
+        padding: 5rem 11rem;
+    }
+}
+
+
+
+
+@media  screen and (min-width:390px) and (max-width:499px) {
+    .headMain{
+        background-position: 50% 107%, 0% 0%;
+        height: 79vh;
+    }
+    .img{
+        display: none;
+    }
+    footer {
+        background-color: #13183F;
+        height: 12vh;
+        padding: 2rem 2rem;
+    }
+    .cards{
+        padding: 28px;
+    }
+}
+
+@media  screen and (width:360px) {
+    .headMain{
+        background-position: 50% 107%, 0% 0%;
+        height: 95vh;
+    }
+    .img{
+        display: none;
+    }
+    footer {
+        background-color: #13183F;
+        height: 14vh;
+        padding: 2rem 2rem;
+    }
+    .cards{
+        padding: 0;
+    }
+}
+
+@media  screen and (width:390px) {
+    .headMain{
+        background-position: 50% 107%, 0% 0%;
+        height: 79vh;
+    }
+    .img{
+        display: none;
+    }
+    footer {
+        background-color: #13183F;
+        height: 13vh;
+        padding: 2rem 2rem;
+    }
+    .cards{
+        padding: 0 0 2rem 0;
+    }
+}
+@media  screen and (width:375px) {
+    .headMain {
+        background-position: 50% 102%, 0% 0%;
+        height: 107vh;
+    }
+    .img{
+        display: none;
+    }
+    footer {
+        background-color: #13183F;
+        height: 12vh;
+        padding: 1rem 2rem;
+    }
+    .cards{
+        padding: 0 0 2rem 0;
+    }
+}
+@media  screen and (width:540px) {
+    .img{
+        display: none;
+    }
+}
+@media  screen and (width:768px) {
+    .cards {
+        padding: 16rem 0rem 7rem 0rem;
+    }
+    .headerNav {
+        padding: 1rem 7rem 0rem;
+    }
+}
+
+@media  screen and (width:280px) {
+    .mainArticle p {
+        font-size: 14px;
+    }   
+    .mainArticle h1 {
+        font-size: 30px;
+    }
+    .img{
+        display: none;
+    }
+    .headMain {
+        height: 109vh;
+        background-size: 135%;
+    }
+    .cards{
+        padding: 0;
+    }
+    .animationCard{
+        padding-left: 17px;
+    }
+    .animationCard p {
+        font-size: 16px;
+        padding-right: 1rem;
+        width: 280px;
+    }
+    .designCard{
+        padding-left: 17px;
+    }
+    .designCard p{
+        width: 280px;
+    }
+    .photographyCard{
+        padding-left: 17px;
+    }
+    .photographyCard p{
+        width: 280px;
+    }
+    .cryptoCard{
+        padding-left: 17px;
+    }
+    .cryptoCard p{
+        width: 280px;
+    }
+    .businessCard{
+        padding-left: 17px;
+    }
+    .businessCard p{
+        width: 280px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+  
